@@ -7,14 +7,14 @@ import {AppBar, Toolbar, Typography, Container, Grid, Button, Paper} from "@mate
 import {Menu} from '@material-ui/icons';
 import IconButton from '@material-ui/core/IconButton';
 
-export type FilterValuesType = "all" | "active" | "completed";
+export type  FilterValuesType = "all" | "active" | "completed";
 export type TodolistType = {
     id: string
     title: string
     filter: FilterValuesType
 }
 
-type TasksStateType = {
+export type TasksStateType = {
     [key: string]: Array<TaskType>
 }
 
