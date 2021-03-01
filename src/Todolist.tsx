@@ -84,7 +84,7 @@ export const Todolist = React.memo(function (props: PropsType) {
         </div>
         <ul style={{listStyle: "none", marginLeft: "0px"}}>
             {
-                props.tasks.map(t => {
+                props.tasks.map(t =>
                     <Task
                         task={t}
                         changeTaskStatus={props.changeTaskStatus}
@@ -92,7 +92,7 @@ export const Todolist = React.memo(function (props: PropsType) {
                         removeTask={props.removeTask}
                         todolistId={t.id}
                         key={t.id}/>
-                })
+                )
             }
         </ul>
 
